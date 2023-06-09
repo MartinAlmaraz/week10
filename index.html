@@ -6,16 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-</head>
-<body class="container">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="container body">
     <br>
+    <div class="formTableWrapper">
     <div class="card">
-      
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+                <label for="new-start-date">What Day Are You Going For Groceries?</label>
+                <input type="date" class="form-control" id="new-start-date">
+            </div>
+          </div>
+        
+        
+       </div>
+       <div class="row">
+        <div class="col-sm">
+            <div class="form-group">
+                <label for="new-task">Groceries</label>
+                <input type="text" class="form-control" id="new-task" placeholder="Grocery">
+            </div>
+        </div>
     </div>
-  
+    <div>
+        <button id="add" class="btn btn-primary form-control">Add Groceries</button>
+    </div>
+  </div>
+</div>
+  <table id="list" class="table table-dark table-striped">
+    <tr>
+      <th>Grocery</th>
+      <th>Date Created</th>
+      <th>Start Date</th>
+      <th>Actions</th>
+    </tr>
+  </table>
 
+</div>
+  
+  <script src="index.js"></script>
    <script src="node_modules/jquery/dist/jquery.js"></script> 
    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
-   <script src="index.js"></script> 
 </body>
 </html>
